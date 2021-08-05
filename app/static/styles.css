@@ -1,0 +1,244 @@
+@import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap');
+body,
+html {
+    margin: 0;
+    height: 100%;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+.navbar {
+    background-color: #666565;
+    padding: 3px;
+    width: 100%;
+    height: max-content;
+    position: sticky;
+    top: 0;
+}
+
+.nav-icon {
+    color: white;
+    cursor: pointer;
+    float: right;
+    margin-right: 5%;
+    margin-top: 4vh;
+    font-size: large;
+    display: none;
+}
+
+.navbar a {
+    color: white;
+    padding: 1vh;
+    padding-left: 12px;
+    padding-right: 12px;
+    margin-left: 6px;
+    margin-right: 6px;
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+    border: 1px solid whitesmoke;
+    border-radius: 3px;
+    display: inline-block;
+    line-height: 1.6;
+}
+
+.navbar a:hover,
+button:hover {
+    color: #666565;
+    background-color: whitesmoke;
+    transition-duration: 0.2s;
+}
+
+.nav-links {
+    width: max-content;
+    margin: 1px;
+    float: right;
+    margin-right: 4%;
+}
+
+.header-design {
+    width: max-content;
+    display: inline-block;
+    margin-left: 3vw;
+    margin-top: 2px;
+    padding: 2px;
+    font-family: 'Cedarville Cursive', cursive;
+    font-size: xx-large;
+    font-weight: 600;
+    color: whitesmoke;
+}
+
+.page-footer {
+    background-color: #666565;
+    width: 100vw;
+    height: max-content;
+    padding-top: 15px;
+    padding-bottom: 8px;
+    text-align: center;
+}
+
+.page-footer a {
+    color: white;
+    font-size: xx-large;
+    padding: 6px;
+    margin: 6px;
+}
+
+.page-footer a:hover {
+    opacity: 0.5;
+    transition-duration: 0.2s;
+}
+
+.footer-txt {
+    padding-top: 1vh;
+    color: white;
+}
+
+
+/* other pages */
+
+.body-div {
+    min-height: 100vh;
+    margin: 10px;
+}
+
+
+/* contact page */
+
+.grid,
+.form-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-top: 15px;
+}
+
+.text-div {
+    margin: 0 auto;
+    width: 50%;
+    line-height: 1.6;
+}
+
+.social-links,
+.social-texts {
+    width: 100%;
+}
+
+.social-links a {
+    color: #666565;
+    font-size: x-large;
+    padding: 4px;
+    margin: 2px;
+}
+
+.social-links a:hover {
+    opacity: 0.5;
+    transition-duration: 0.2s;
+}
+
+.grid-width {
+    width: 80%;
+    margin-bottom: 20px;
+}
+
+.grid-input {
+    width: 70%;
+    padding: 10px;
+    outline: none;
+}
+
+.grid-lastInput {
+    width: 100%;
+    padding: 10px;
+    outline: none;
+}
+
+textarea {
+    resize: none;
+}
+
+.form-fields {
+    display: block;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 10px;
+    width: 80%;
+    outline: none;
+}
+
+form input:valid,
+textarea:valid {
+    border: 2px solid green;
+}
+
+button {
+    background-color: #666565;
+    color: white;
+    border-radius: 5px;
+    margin-top: 5px;
+    padding: 8px;
+}
+
+.large-font {
+    font-size: 100px;
+}
+
+.small-font {
+    font-size: larger !important;
+}
+
+
+/* mobile responsiveness */
+
+@media only screen and (max-width: 641px),
+only screen and (max-device-width: 641px) {
+    body,
+    html {
+        overflow-x: hidden;
+    }
+    .grid {
+        display: block;
+        padding-top: 15px;
+    }
+    .grid-child {
+        width: 100%;
+    }
+    .text-div {
+        width: 80%;
+    }
+    .input-grid {
+        margin-top: 10vh !important;
+        display: block;
+        width: 80%;
+        margin: 0 auto;
+        margin-bottom: 15vh;
+    }
+    .nav-icon {
+        display: block;
+    }
+    .nav-links {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        float: right;
+        position: absolute;
+        right: 0;
+        padding-top: 15px;
+        margin-right: 0;
+        background-color: #666565;
+        width: 50%;
+        height: 80vh;
+        transform: translateX(100%);
+    }
+    .body-div {
+        margin-right: 0;
+    }
+    .nav-links a {
+        border: none;
+    }
+}
+
+.nav-show {
+    transform: translateX(0%);
+    transition: 0.5s;
+}

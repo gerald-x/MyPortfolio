@@ -1,0 +1,36 @@
+{% extends 'layout.html' %}{% block title%}Contact{% endblock %} {% block body %}
+<div class="body-div grid">
+    <div class="grid-child">
+        <div class="text-div">
+            <div class="social-text">
+                <h3 class="large- font">Want to chat?</h3>
+                <p class="small-font">You can reach me through my socials or send me an email through the form</p>
+            </div>
+
+            <div class="social-links">
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+                <a href="{{ socials['twitter'] }}"><i class="fab fa-twitter-square"></i></a>
+                <a href="{{ socials['instagram'] }}"><i class="fab fa-instagram"></i></a>
+                <a href="{{ socials['github'] }}"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <div class="input-grid">
+        <form>
+            <div class="form-grid grid-width">
+                <input type="text" name="" id="" placeholder="First Name" class="grid-input" required aria-required="true">
+                <input type="text" name="" id="" placeholder="Last Name" class="grid-lastInput" required aria-required="true">
+            </div>
+
+            <input type="email" name="" id="" placeholder="Email Address" class="form-fields" required>
+            <input type="text" name="" id="emailSubject" placeholder="Subject" class="form-fields" required>
+            <textarea name="" id="" cols="40" rows="20" class="form-fields" minlength="0" required aria-required="true"></textarea>
+            <button type="button" id="submitBtn">Send</button>
+        </form>
+    </div>
+</div>
+
+
+
+{% endblock %}
