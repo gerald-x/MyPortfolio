@@ -15,6 +15,7 @@ body {
     width: 100%;
     height: max-content;
     position: sticky;
+    position: -webkit-sticky;
     top: 0;
 }
 
@@ -195,7 +196,7 @@ button {
 
 .logo-div {
     box-shadow: 1px 1px 10px #b5b5b5;
-    margin: 7vh 3vw;
+    margin: 5vh 3vw;
     padding: 0;
     width: 380px;
     min-height: 450px;
