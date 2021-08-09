@@ -195,12 +195,12 @@ button {
 }
 
 .logo-div {
-    box-shadow: 1px 1px 10px #b5b5b5;
+    box-shadow: 1px 1px 10px rgb(0, 0, 0, 0.5);
     margin: 5vh 3vw;
     padding: 0;
     width: 380px;
     min-height: 450px;
-    border-radius: 5px;
+    border-radius: 10px;
     line-height: 1.7;
 }
 
@@ -210,7 +210,16 @@ button {
 }
 
 .tech-div .js-image-container {
-    width: 80%;
+    width: 75%;
+    height: 40%;
+    padding-top: 2%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 3%;
+}
+
+.tech-div .html-image-container {
+    width: 60%;
     height: 50%;
     padding-top: 2%;
     margin-left: auto;
