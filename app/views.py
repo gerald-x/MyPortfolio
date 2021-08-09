@@ -22,6 +22,15 @@ def index():
     return render_template("index.html", profile=profile_data, socials=socials)
 
 
-@app.route("/contact")
+@app.route("/contact", methods=["GET", "POST"])
 def contact():
-    return render_template("contact.html", socials=socials)
+    if request.method == "GET":
+        return render_template("contact.html", socials=socials)
+    else:
+        first_name = request.form.get("first_name").lower()
+        last_name = request.form.get("last_name").lower()
+        email = request.form.get("email")
+        subject = request.form.get("subject")
+        body = request.form.get("body")
+
+        return render_template("contact.html", body=body, subject=subject, email=email, last_name=last_name.capitalize(), first_name=first_name.capitalize(), button="submitBtn", socials=socials)
