@@ -4,14 +4,14 @@ $(document).ready(function() {
         $('.nav-links').toggleClass('nav-show');
     });
 
-});
+    var submit = document.getElementById('submitBtn')
+    if (submit) {
+        var firstName = $('.grid-input').val();
+        var lastName = $('.grid-lastInput').val();
 
-$('#submitBtn').click(function(event) {
-    var firstName = $('.grid-input').val();
-    var lastName = $('.grid-lastInput').val();
-
-    var email = 'geraldokolodc@gmail.com';
-    var subject = firstName + " " + lastName + " " + $('#emailSubject').val();
-    var emailBody = $('textarea').val();
-    document.location = "mailto:" + email + "?subject=" + subject + "&body=" + emailBody;
-});
+        var email = 'geraldokolodc@gmail.com';
+        var subject = "From: " + firstName + " " + lastName + "   Title: " + $('#emailSubject').val();
+        var emailBody = $('textarea').val();
+        document.location = "mailto:" + email + "?subject=" + subject + "&body=" + emailBody;
+    }
+});;

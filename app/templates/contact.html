@@ -17,16 +17,16 @@
     </div>
 
     <div class="input-grid">
-        <form>
+        <form action="{{ url_for('contact') }}" method="POST">
             <div class="form-grid grid-width">
-                <input type="text" name="" id="" placeholder="First Name" class="grid-input" required aria-required="true">
-                <input type="text" name="" id="" placeholder="Last Name" class="grid-lastInput" required aria-required="true">
+                <input type="text" name="first_name" id="" placeholder="First Name" value="{{first_name}}" class="grid-input" required>
+                <input type="text" name="last_name" id="" placeholder="Last Name" value="{{last_name}}" class="grid-lastInput" required>
             </div>
 
-            <input type="email" name="" id="" placeholder="Email Address" class="form-fields" required>
-            <input type="text" name="" id="emailSubject" placeholder="Subject" class="form-fields" required>
-            <textarea name="" id="" cols="40" rows="20" class="form-fields" minlength="0" required aria-required="true"></textarea>
-            <button type="button" id="submitBtn">Send</button>
+            <input type="email" name="email" id="" placeholder="Email Address" value="{{email}}" class="form-fields" required>
+            <input type="text" name="subject" id="emailSubject" placeholder="Subject" value="{{subject}}" class="form-fields" required>
+            <textarea name="body" id="" cols="40" rows="20" class="form-fields" minlength="0" required>{{body}}</textarea>
+            <button type="submit" id="{{button}}">Send</button>
         </form>
     </div>
 </div>

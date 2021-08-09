@@ -1,7 +1,37 @@
 {% extends 'layout.html' %}{% block title %}Home{% endblock %} {% block body %}
 
 <div class="body-div">
-    {{profile |safe}}
+    <div>
+        {{profile |safe}}
+    </div>
+
+
+    <div class="tech-div">
+        <div class="logo-div">
+            <div class="image-container">
+                <img src="{{ url_for('static', filename='logo/python(2).png') }}" alt="">
+            </div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Msollitia atque vero quod. Ipsa, accusantium eaque fuga, quasi inventore dicta nostrum corporis dolorum saepe, sit iusto harum praesentium distinctio! Maxime, vero.</p>
+        </div>
+        <div class="logo-div">
+            <div class="db-image-container">
+                <img src="{{ url_for('static', filename='logo/database.png') }}" alt="">
+            </div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, non, modi nemo ex consectetur eligendi quasi pariatur, aspernatur veritatis praesentium asperiores voluptatem sunt id inventore velit. Deserunt ullam eius facilis?</p>
+        </div>
+        <div class="logo-div">
+            <div class="js-image-container">
+                <img src="{{ url_for('static', filename='logo/html-css.png') }}" alt="">
+            </div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores iure magnam assumenda repellendus repudiandae tenetur repellat beatae debitis, autem necessitatibus, sit neque dolore, aspernatur iste nihil consequatur. Reiciendis, amet ea.</p>
+        </div>
+        <div class="logo-div">
+            <div class="image-container">
+                <img src="{{ url_for('static', filename='logo/javascript(1).jpg') }}" alt="">
+            </div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et nihil laboriosam eaque quia eius! Perspiciatis minus aliquid vero veritatis amet provident? Quas ipsa cupiditate rem laborum, tempore quos mollitia ipsam.</p>
+        </div>
+    </div>
 </div>
 
 {% endblock %}

@@ -168,7 +168,7 @@ textarea {
 
 form input:valid,
 textarea:valid {
-    border: 2px solid green;
+    border: 1px solid green;
 }
 
 button {
@@ -185,6 +185,50 @@ button {
 
 .small-font {
     font-size: larger !important;
+}
+
+.tech-div {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 10%;
+}
+
+.logo-div {
+    box-shadow: 1px 1px 10px #b5b5b5;
+    margin: 7vh 3vw;
+    padding: 0;
+    width: 380px;
+    min-height: 450px;
+    border-radius: 5px;
+    line-height: 1.7;
+}
+
+.tech-div .image-container {
+    width: 100%;
+    height: 50%;
+}
+
+.tech-div .js-image-container {
+    width: 80%;
+    height: 50%;
+    padding-top: 2%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 3%;
+}
+
+.tech-div .db-image-container {
+    width: 50%;
+    height: 50%;
+    padding-top: 2%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 3%;
+}
+
+img {
+    height: auto;
+    width: 100%;
 }
 
 
@@ -241,4 +285,48 @@ only screen and (max-device-width: 641px) {
 .nav-show {
     transform: translateX(0%);
     transition: 0.5s;
+}
+
+@media only screen and (max-width: 1022px) and (min-width: 700px),
+only screen and (max-device-width: 1022px) and (min-device-width: 700px) {
+    .tech-div {
+        align-items: center;
+        justify-content: center;
+        margin-left: 0;
+    }
+    .logo-div {
+        width: 480px;
+    }
+}
+
+@media only screen and (max-width: 700px) and (min-width: 641px),
+only screen and (max-device-width: 700px) and (min-device-width: 641px) {
+    .tech-div {
+        align-items: center;
+        justify-content: center;
+        margin: 0%;
+    }
+    .logo-div {
+        width: 350px;
+    }
+}
+
+@media only screen and (max-width: 641px) {
+    .logo-div {
+        width: 300px;
+    }
+    .tech-div {
+        margin: 0%;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media only screen and (max-width: 1103px) and (min-width: 1022px),
+only screen and (max-device-width: 1103px) and (min-device-width: 1022px) {
+    .tech-div {
+        align-items: center;
+        justify-content: center;
+        margin: 0%;
+    }
 }
